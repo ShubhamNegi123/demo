@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,700&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+body ul {
+  list-style: none;
+}
+
+.main-wrapper {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100vh;
+  height: 100vh;
+  background: url(../images/teamwork-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.main-wrapper::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  content: "";
+  background: linear-gradient(90deg, #ff6e7f 20%, #bfe9ff 100%);
+  mix-blend-mode: color;
+}
+
+header {
+  position: relative;
+  z-index: 99;
+}
+header .logo img {
+  width: 100%;
+}
+header nav ul {
+  padding-left: 0px;
+}
+header nav ul li a {
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  position: relative;
+}
+header nav ul li a::after {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 0%;
+  height: 2px;
+  content: "";
+  background-color: #ffd71d;
+  transition: all 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #ffd71d;
+  transition: all 0.3s ease;
+}
+header nav ul li a:hover::after {
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.home {
+  position: relative;
+  z-index: 99;
+  margin-top: 50vh;
+}
+.home h1 {
+  position: relative;
+  z-index: 99;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 56px;
+  text-align: center;
+}
+.home h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 56px;
+  font-family: "Playfair Display", serif;
+}
+
+.about {
+  margin: 100px 0px;
+}
+.about .about-img-wrapper img {
+  max-width: 100%;
+}
+.about .about-us-paragraph {
+  padding-left: 10px;
+}
+.about .about-us-paragraph h2 {
+  font-size: 50px;
+  color: #ffd71d;
+  font-weight: 700;
+}
+.about .about-us-paragraph p {
+  line-height: 28px;
+}
+
+.services {
+  background-color: #ffd71d;
+  padding: 80px 0px;
+}
+.services .our-services h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.services .services-details {
+  margin-bottom: 40px;
+}
+.services .services-details h3 {
+  font-size: 25px;
+  color: #1c1d24;
+  font-weight: 700;
+}
+.services .services-details p {
+  font-size: 14px;
+  color: #1c1d24;
+}
+.services .services-img-wrapper img {
+  width: 100%;
+}
+
+.our-work {
+  margin: 100px 0px;
+}
+.our-work h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffd71d;
+  margin-bottom: 20px;
+}
+.our-work ul {
+  margin-bottom: 40px;
+  padding-left: 0px;
+}
+.our-work ul li {
+  cursor: pointer;
+  font-weight: 500;
+  color: #1c1d24;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.our-work ul li::after {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 0%;
+  height: 2px;
+  content: "";
+  background-color: #ffd71d;
+  transition: all 0.3s ease;
+}
+.our-work ul li:hover {
+  color: #ffd71d;
+  transition: all 0.3s ease;
+}
+.our-work ul li:hover::after {
+  transition: all 0.3s ease;
+  width: 100%;
+}
+.our-work .work-details .img-wrapper {
+  margin-bottom: 20px;
+}
+.our-work .work-details .img-wrapper img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.testimonials {
+  margin: 50px 0px;
+  padding: 50px 0px;
+  background-color: #ffd71d;
+}
+.testimonials h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #1c1d24;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.testimonials .client {
+  padding: 0px 50px;
+  text-align: center;
+}
+.testimonials .client .img-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+  height: 100px;
+}
+.testimonials .client .img-wrapper img {
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+}
+.testimonials .client .comment {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.testimonials .client .name,
+.testimonials .client .designation {
+  font-size: 14px;
+  color: #1c1d24;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.owl-nav {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.owl-nav .owl-prev span,
+.owl-nav .owl-next span {
+  font-size: 50px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent;
+  color: #000;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #1c1d24;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 15px;
+  background: transparent;
+  border: 1px solid #404252;
+  height: 15px;
+}
+
+.our-clients {
+  margin: 100px 0px;
+}
+.our-clients h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #1c1d24;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.our-clients .brand-logo {
+  margin-bottom: 30px;
+}
+.our-clients .brand-logo img {
+  max-width: 100%;
+  width: 100%;
+  border: 1px solid #eee;
+}
+
+.banner-quotes {
+  background-color: #ffd71d;
+  padding: 100px 0px;
+  margin-top: 100px;
+}
+.banner-quotes h2 {
+  text-align: center;
+  font-size: 70px;
+  color: #1c1d24;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+.banner-quotes h2 i {
+  font-size: 40px;
+}
+.banner-quotes h2 .fa-quote-left {
+  margin-left: 20px;
+}
+.banner-quotes h2 .fa-quote-right {
+  margin-right: 20px;
+}
+.banner-quotes p {
+  font-size: 30px;
+  color: #997f00;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.banner-quotes a {
+  padding: 10px 30px;
+  background-color: #fff;
+  color: #1c1d24;
+}
+
+footer {
+  padding-top: 50px;
+  background-color: #1c1d24;
+}
+footer h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-style: normal;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 30px;
+  line-height: 50px;
+  color: #f3f3f3;
+}
+footer .logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+footer .logo img {
+  max-width: 100%;
+  width: 100%;
+}
+footer .footer-links h3, footer .social-media-links h3, footer .adress h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffd71d;
+  margin-bottom: 20px;
+}
+footer .footer-links ul, footer .social-media-links ul, footer .adress ul {
+  padding-left: 0px;
+}
+footer .footer-links ul li, footer .social-media-links ul li, footer .adress ul li {
+  margin-bottom: 15px;
+}
+footer .footer-links ul li a, footer .social-media-links ul li a, footer .adress ul li a {
+  color: #f3f3f3;
+}
+footer .adress ul li {
+  color: #f3f3f3;
+  position: relative;
+}
+footer .adress ul li i {
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  left: -30px;
+}
+footer .bb {
+  padding-bottom: 50px;
+  border-bottom: 2px solid #ffd81b;
+}
+footer .copyright {
+  color: #fff;
+  padding: 20px 0px;
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */
